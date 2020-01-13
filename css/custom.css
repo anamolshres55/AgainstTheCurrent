@@ -1,0 +1,531 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+}
+
+p {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background: #000000;
+}
+
+.background-blue {
+    background-color: #18aebf;
+    color: white;
+}
+
+.top-header-navbar {
+    background-color: #18aebf;
+    color: #ffffff;
+}
+
+.top-icons {
+    text-align: center;
+}
+
+.top-icons i {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #18aebf;
+    transition: 0.2s;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.menu-item {
+    color: #18aebf;
+}
+
+.nav-link {
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+.menu-item {
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.menu-item:hover {
+    color: #18aebf;
+    text-decoration: none;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slide1 {
+    background-image: url("../img/wallpaper1.jpg");
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+}
+
+.slide2 {
+    background-image: url('../img/wallpaper2.jpg');
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+}
+
+.slide3 {
+    background-image: url("../img/wallpaper8.jpg");
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+}
+
+.slide-text h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.slide-text p {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.slide-divider1 {
+    position: absolute;
+    top: 18px;
+    left: -100px;
+    width: 100px;
+    height: 5px;
+    background-color: #18aebf;
+}
+
+.slide-divider2 {
+    position: absolute;
+    top: 18px;
+    right: -100px;
+    width: 100px;
+    height: 5px;
+    background-color: #18aebf;
+}
+
+.black-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 100;
+}
+
+/* Homepage About Us Section Begins */
+
+
+.h-container-heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.h-container-heading h2 {
+    display: inline-block;
+    border-bottom: 3px solid #18aebf;
+}
+
+.h-about-us-title h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.h-about-us-details p {
+    font-size: 1.05rem;
+}
+
+/* Homepage About Us Section Ends */
+
+/* Homepage Album Section Begins */
+
+.h-music-album-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.h-music-album-container img {
+    width: 100%;
+    height: auto;
+}
+
+.blue-overlay {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    background-color: #18aebf;
+    width: 92%;
+    height: 100%;
+    transform: scale(0);
+    transition: 0.4s ease;
+    opacity: 0.6;
+}
+
+.h-music-album-container:hover .blue-overlay {
+    transform: scale(1);
+}
+
+.h-music-album-container:hover em {
+    font-size: 40px;
+}
+
+.h-music-album-text em {
+    color: #ffffff;
+    font-size: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+    text-transform: uppercase;
+}
+
+/* Homepage Album Section Ends */
+
+/* Homepage Tours Section Begins */
+
+.h-tours-grid {
+    background-image: url(../img/wallpaper2.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.h-tour-container {
+    background-color: #000000;
+    margin: 5px 0;
+    font-size: 1.20rem;
+}
+
+.h-tour-location,
+.h-tour-buy-tickets {
+    color: #18aebf;
+}
+
+.h-tour-date,
+.h-tour-name {
+    color: #ffffff;
+}
+
+.h-tour-buy-tickets {
+    cursor: pointer;
+}
+
+/* Homepage Tours Section Ends */
+
+/* Homepage Merch Section Begins */
+
+.h-merchs-grid {
+    background-color: #eee;
+}
+
+.h-merch-image-container {
+    border: 2px solid #18aebf;
+}
+
+.h-merch-price {
+    font-size: 1.20rem;
+    display: block;
+    color: #18aebf;
+}
+
+.h-merch-title {
+    font-weight: 900;
+    color: #000000;
+}
+
+.view-product {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    display: block;
+    margin: 5px auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+/* Homepage Merch Section Ends */
+/* Footer Section Begins */
+footer {
+    position: relative;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    background-color: #000000;
+}
+
+.footer-social-icons {
+    background-color: #18aebf;
+    color: white;
+}
+
+.footer-social-icon i {
+    font-size: 20px;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+/* About Us Page CSS Begins */
+
+.container-heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.container-heading h2 {
+    display: inline-block;
+    border-bottom: 3px dotted #18aebf;
+}
+
+.team-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.team-name {
+    font-size: 1.50rem;
+    font-weight: 900;
+}
+
+.team-position {
+    font-size: 1rem;
+    color: #18aebf;
+    font-weight: bold;
+}
+
+.about-team-member {
+    font-size: 1.10rem;
+}
+
+.team-social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.team-social-icons i:hover {
+    cursor: pointer;
+    color: #18aebf;
+}
+
+/* About Us Page CSS Ends */
+
+/* Music Image Container CSS Begins */
+
+.music-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.album-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.release-year {
+    display: block;
+    font-size: 1.10rem;
+}
+
+.song-no,
+.song-name {
+    font-size: 1.10rem;
+    font-weight: bold;
+}
+
+.song-container {
+    position: relative;
+}
+
+.song-links {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+
+}
+
+.song-links i {
+    font-size: 20px;
+    color: #18aebf;
+    cursor: pointer;
+}
+
+/* Music CSS Ends */
+
+/* Tours CSS Begins  */
+
+.tour-container {
+    background-image: url("../img/wallpaper9.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.tour-grid {
+    position: relative;
+    z-index: 100;
+
+}
+
+.tour-info {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.tour-date b,
+.tour-name b,
+.tour-location em {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tour-ticket a {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #18aebf;
+
+}
+
+.tour-ticket {
+    position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    .tour-ticket a {
+        position: absolute;
+        right: 0;
+    }
+}
+
+/* Tours CSS Ends */
+
+/* Merch CSS Begins */
+
+.merch-price {
+    color: #18aebf;
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+    font-size: 1.50rem;
+}
+
+.merch-title {
+    font-size: 1.20rem;
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+}
+
+/* Merch CSS Ends */
+/* Contact Us PAge CSS Begins */
+
+.contact-container {
+    background-image: url("../img/wallpaper9.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.contact-container .container-heading,
+.contact-grid {
+    z-index: 100;
+    position: relative;
+}
+
+input {
+    width: 50%;
+    background: transparent;
+    height: 30px;
+    margin: 10px;
+    border-width: 0;
+    border-bottom: 1px solid #18aebf;
+}
+
+textarea {
+    background: transparent;
+    border-width: 0;
+    border-bottom: 1px solid #18aebf;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    font-size: 1.10rem;
+    padding: 0px 10px;
+    color: white;
+}
+
+.submit-btn {
+    background-color: #18aebf;
+    color: #ffffff;
+    padding: 5px 20px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    font-size: 1.20rem;
+    margin-bottom: 15px;
+}
+
+/* Contact Us Page CSS Ends */
